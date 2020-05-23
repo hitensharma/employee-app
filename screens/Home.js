@@ -12,8 +12,10 @@ const Home = (props) => {
     })
     //console.log(data, loading)
 
+    const url = "http://10.0.2.2:3000";
+
     const fetchData = () => {
-        fetch(/* "http://bd01be98.ngrok.io" */ "http://10.0.2.2:3000")
+        fetch(`${url}`)
             .then(res => res.json())
             .then(result => {
                 //setData(result)

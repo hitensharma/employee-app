@@ -35,8 +35,10 @@ const CreateEmployee = ({ navigation, route }) => {
     const [modal, setModal] = useState(false)
     const [enableShift, setEnableShift] = useState(false)
 
+    const url = "http://10.0.2.2:3000";
+
     const submitData = () => {
-        fetch(/* "http://bd01be98.ngrok.io/send-data" */ "http://10.0.2.2:3000/send-data", {
+        fetch(`${url}/send-data`, {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -60,8 +62,9 @@ const CreateEmployee = ({ navigation, route }) => {
             })
     }
 
+
     const updateDetails = () => {
-        fetch(/* "http://bd01be98.ngrok.io/update" */ "http://10.0.2.2:3000/update", {
+        fetch(`${url}/update`, {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'

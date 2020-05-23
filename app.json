@@ -1,12 +1,8 @@
 {
   "expo": {
-    "name": "employeeApp",
+    "name": "Employee App",
     "slug": "employeeApp",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,11 +14,16 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
+    },
+    "sdkVersion": "37.0.0",
+    "description": "An app created to ADD / REMOVE /EDIT Employee, storing information regarding name, email, salary, picture, position, and mobile number.",
+    "githubUrl": "https://github.com/hitensharma/employee-app",
+    "android": {
+      "package": "com.hitengraphics.employeeapp",
+      "versionCode": 1
     }
   }
 }

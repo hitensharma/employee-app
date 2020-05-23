@@ -6,10 +6,12 @@ import { MaterialIcons, FontAwesome } from '@expo/vector-icons';
 
 const Profile = (props) => {
 
+    const url = "http://10.0.2.2:3000";
+
     const { _id, name, picture, phone, salary, email, position } = props.route.params.item
     console.log(_id)
     const deleteEmployee = () => {
-        fetch(/* "http://bd01be98.ngrok.io/delete"  */ "http://10.0.2.2:3000/delete", {
+        fetch(`${url}/delete`, {
             method: "post",
             headers: {
                 'content-Type': 'application/json'
